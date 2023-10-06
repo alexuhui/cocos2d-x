@@ -10,3 +10,6 @@
 [submodule "web"]
         path = web
         url = https://github.com/cocos2d/cocos2d-html5.git
+[submodule "poly2tri"]
+        path = poly2tri
+        url = https://github.com/greenm01/poly2tri.git
