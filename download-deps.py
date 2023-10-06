@@ -44,6 +44,7 @@ import traceback
 import distutils
 import fileinput
 import json
+import ssl
 
 from optparse import OptionParser
 from time import time
@@ -52,6 +53,7 @@ from sys import stdout
 from distutils.errors import DistutilsError
 from distutils.dir_util import copy_tree, remove_tree
 
+ssl._create_default_https_context = ssl._create_unverified_context
 
 def delete_folder_except(folder_path, excepts):
     """
@@ -120,6 +122,7 @@ class CocosZipInstaller(object):
         print("==> Ready to download '%s' from '%s'" % (self._filename, self._url))
         import urllib2
         try:
+            # context = ssl._create_unverified_context()
             u = urllib2.urlopen(self._url)
         except urllib2.HTTPError as e:
             if e.code == 404:
