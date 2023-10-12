@@ -10,3 +10,6 @@
 [submodule "poly2tri"]
 	path = poly2tri
 	url = https://github.com/greenm01/poly2tri.git
+[submodule "tools/cocos2d-console"]
+	path = tools/cocos2d-console
+	url = https://github.com/alexuhui/cocos2d-console.git
