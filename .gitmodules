@@ -7,3 +7,6 @@
 [submodule "web"]
         path = web
         url = git://github.com/cocos2d/cocos2d-html5.git
+[submodule "tools/cocos2d-console"]
+	path = tools/cocos2d-console
+	url = https://github.com/alexuhui/cocos2d-console.git
